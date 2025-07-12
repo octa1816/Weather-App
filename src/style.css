@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #7668d1 0%, #4b0082 100%);
+  font-family: 'Raleway', sans-serif;
+}
+
+.header {
+  background-color: transparent;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.weather-icon {
+  width: 70px;
+  height: 70px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+.title-header {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.Searchdiv-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.1rem;
+  flex-wrap: wrap;
+}
+
+.input-form {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #e3e0ff;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  outline: none;
+  min-width: 200px;
+}
+
+.button-class {
+  padding: 0.7rem 1.2rem;
+  background-color: #1c1b2f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-class:hover {
+  background-color: #3b3960;
+  transform: scale(1.03);
+}
+
+.footer-class {
+  background-color: #1c1b2f;
+  padding: 1rem;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.95rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 370px;
+}
+
+/* Tarjeta del clima */
+.Tarjetadeclima {
+  display: none;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  margin: 3rem auto;
+  width: fit-content;
+  max-width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  animation: fadeIn 0.4s ease-in-out;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+.Tarjetadeclima:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.Tarjetadeclima h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #4b0082;
+}
+
+.Tarjetadeclima p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
